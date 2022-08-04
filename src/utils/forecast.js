@@ -20,8 +20,21 @@ const forecast = (latitude, longitude, callback) => {
           response.body.current.weather_descriptions[0] +
             '. It is currently ' +
             response.body.current.temperature +
-            ' degress out.'
+            ' degress out with a humidity of ' +
+            response.body.current.humidity +
+            ' and a heat index of ' +
+            response.body.current.feelslike +
+            '. There is ' +
+            response.body.current.cloudcover +
+            ' percent cloud cover and UV index of ' +
+            response.body.current.uv_index +
+            '. The wind speed is ' +
+            response.body.current.wind_speed +
+            ' mph, currently blowing ' +
+            response.body.current.wind_dir +
+            '.'
         )
+        console.log(response.body.current)
       }
     })
   })
