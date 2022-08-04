@@ -28,7 +28,7 @@ const forecast = (latitude, longitude, callback) => {
             response.body.current.cloudcover +
             ' percent cloud cover and UV index of ' +
             response.body.current.uv_index +
-            '. The wind speed is ' +
+            '/10. The wind speed is ' +
             response.body.current.wind_speed +
             ' mph, currently blowing ' +
             response.body.current.wind_dir +
